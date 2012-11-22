@@ -1,4 +1,4 @@
-django-todolist-api
+django-todolist-api [![Build Status](https://secure.travis-ci.org/jandersonfc/django-todolist-api.png?branch=master)](https://travis-ci.org/jandersonfc/django-todolist-api)
 ===========
 
 Example of Restful api using django-tastypie
