@@ -19,8 +19,8 @@ install dependencies using pip:
     pip install unipath==0.2.1
     pip install git+https://github.com/toastdriven/django-tastypie.git
 
-last version in github the django-tastypie have support for test (v1.0.0-beta)
+last version in github the django-tastypie have support for test resources (v1.0.0-beta)
 
 ### Clients
 
-examples of clients javascripts consumer this api in [javascript-todo-list](https://github.com/jandersonfc/javascript-todo-list)
+examples of clients javascripts consuming this api in [javascript-todo-list](https://github.com/jandersonfc/javascript-todo-list)
