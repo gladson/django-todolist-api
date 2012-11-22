@@ -3,20 +3,26 @@ from tastypie.test import ResourceTestCase
 from todolist.models import List, Item
 
 
-class ListTest(TestCase):
+class ListModelTest(TestCase):
     def setUp(self):
         self.list = List.objects.create(name='list name')
 
-    def test_get_list_unicode(self):
+    def test_create(self):
+        self.assertEqual(1, self.list.pk)
+
+    def test_unicode(self):
         self.assertEqual(u'list name', unicode(self.list))
 
 
-class ItemTest(TestCase):
+class ItemModelTest(TestCase):
     def setUp(self):
         list = List.objects.create(name='list name')
         self.item = Item.objects.create(name='item name', list=list)
 
-    def test_get_item_unicode(self):
+    def test_create(self):
+        self.assertEqual(1, self.item.pk)
+
+    def test_unicode(self):
         self.assertEqual(u'item name', unicode(self.item))
 
 

@@ -1,0 +1,4 @@
+pip install django==1.4
+pip install unipath==0.2.1
+pip install django-nose
+pip install git+https://github.com/toastdriven/django-tastypie.git

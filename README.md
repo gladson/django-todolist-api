@@ -12,14 +12,13 @@ dependencies:
     django 1.4
     unipath 0.2.1
     django-tastypie
+    django-nose
 
 install dependencies using pip:
 
-    pip install django==1.4
-    pip install unipath==0.2.1
-    pip install git+https://github.com/toastdriven/django-tastypie.git
+    pip install -r requirements.txt
 
-last version in github the django-tastypie have support for test resources (v1.0.0-beta)
+*last version in github the django-tastypie have support for test resources (v1.0.0-beta)
 
 ### Clients
 
