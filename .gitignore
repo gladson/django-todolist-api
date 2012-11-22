@@ -1,0 +1,15 @@
+bin 
+build
+include 
+lib 
+local 
+man 
+share 
+Scripts 
+.Python 
+.coverage
+database.db
+htmlcov/*
+*.pyc
+*~
+*.db .DS_Store
