@@ -127,12 +127,24 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'todolist',
     'tastypie',
     'django_nose',
+    'django_jenkins',
 )
 
+PROJECT_APPS = (
+    'todolist',
+)
+
+INSTALLED_APPS += PROJECT_APPS
+
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+JENKINS_TASKS = (
+    'django_jenkins.tasks.with_coverage',
+    'django_jenkins.tasks.django_tests',
+    'django_jenkins.tasks.run_pep8',
+)
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

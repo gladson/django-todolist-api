@@ -9,7 +9,8 @@ Scripts
 .Python 
 .coverage
 database.db
-htmlcov/*
+htmlcov
+reports
 *.pyc
 *~
 *.db .DS_Store

@@ -2,3 +2,5 @@ django==1.4
 unipath==0.2.1
 django-nose
 git+https://github.com/toastdriven/django-tastypie.git
+django-jenkins
+pep8
