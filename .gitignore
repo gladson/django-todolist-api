@@ -9,7 +9,7 @@ Scripts
 .Python 
 .coverage
 database.db
-htmlcov
+htmlcov    
 reports
 *.pyc
 *~

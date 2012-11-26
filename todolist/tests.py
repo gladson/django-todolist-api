@@ -88,6 +88,12 @@ class ListResourceTest(ResourceTestCase):
         self.assertEqual(List.objects.count(), 2)
         self.assertEqual(List.objects.get(pk=self.list.id).name, u'list name updated')
 
+    def test_delete_list(self):
+        url = '/api/v1/lists/%i' % self.list.id
+        self.assertEqual(List.objects.count(), 2)
+        self.assertHttpAccepted(self.api_client.delete(url, format='json'))
+        self.assertEqual(List.objects.count(), 1)
+
 
 class ItemResourceTest(ResourceTestCase):
     def setUp(self):
@@ -149,3 +155,9 @@ class ItemResourceTest(ResourceTestCase):
         self.assertHttpAccepted(self.api_client.put(url, format='json', data=original_data))
         self.assertEqual(Item.objects.count(), 2)
         self.assertEqual(Item.objects.get(pk=self.item.id).done, True)
+
+    def test_delete_list(self):
+        url = '/api/v1/items/%i' % self.item.id
+        self.assertEqual(Item.objects.count(), 2)
+        self.assertHttpAccepted(self.api_client.delete(url, format='json'))
+        self.assertEqual(Item.objects.count(), 1)

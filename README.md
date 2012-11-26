@@ -11,8 +11,11 @@ dependencies:
 
     django 1.4
     unipath 0.2.1
-    django-tastypie
+    git+https://github.com/toastdriven/django-tastypie.git
     django-nose
+    django-jenkins
+    pep8
+    pyflakes
 
 install dependencies using pip:
 
